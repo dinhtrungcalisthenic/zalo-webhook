@@ -1,0 +1,16 @@
+{
+  "name": "zalo-webhook",
+  "version": "1.0.0",
+  "description": "Zalo webhook for DiLiM order scanner",
+  "main": "api/webhook.js",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1"
+  },
+  "devDependencies": {
+    "vercel": "latest"
+  }
+}

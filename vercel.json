@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/webhook.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ],
+  "env": {
+    "ZALO_ACCESS_TOKEN": "@zalo_access_token",
+    "ZALO_GROUP_ID": "@zalo_group_id",
+    "APP_SECRET": "@app_secret"
+  }
+}
